@@ -10,5 +10,7 @@ int main(int argc, char* argv[]) {
    
    printf("IN BIN_ADDER\n");
 
+   printf("LEAVING BIN_ADDER\n");
+
    return 0;
 }

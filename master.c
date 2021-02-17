@@ -6,6 +6,11 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/wait.h>
+#include <sys/shm.h>
+#include <sys/ipc.h>
+#include <signal.h>
+
+int shmid;
 
 int main(int argc, char* argv[]) {
 
@@ -19,6 +24,8 @@ int main(int argc, char* argv[]) {
    maxC = 20;
    tTime = 100;
    input = argv[argc - 1];
+
+   int key = ftok("master", 0);
 
    while((opt = getopt(argc, argv, "hs:t:")) != -1) {
       switch(opt) {
@@ -45,5 +52,8 @@ int main(int argc, char* argv[]) {
    printf("Out of getopt\n");
 
 
+
+
+   printf("exiting master\n");
    return 0;
 }
