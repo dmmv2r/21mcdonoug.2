@@ -1,1 +1,12 @@
-README File
+Donovan McDonough
+
+Version control accomplished using Git/GitHub under username "dmmv2r", project name "21mcdonoug.2". URL is https://github.com/dmmv2r/21mcdonoug.2
+
+Compile program by issuing command "make".
+Clean up by issuing command "make clean".
+
+Run program using ./master (-h for usage help).
+
+WARNING: Program does not compile and does not run. Various errors occur when attempting to compile.
+
+Note: Could not get shared memory to work and thus was stuck on that part and could not move past. Attempted what I thought was how to do other steps but could not test as shared memory would not work.
